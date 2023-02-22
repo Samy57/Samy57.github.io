@@ -1,0 +1,92 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+#globalBox {
+  display: grid;
+
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-areas: "photo name"
+    "photo personnalinformations"
+    "extrainformations maininformations";
+
+}
+
+
+
+
+
+#name {
+  grid-area: name;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+#personnalinformations {
+  grid-area: personnalinformations;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+div.lookingfor {
+  font-weight: bold;
+}
+
+#photo {
+  grid-area: photo;
+  align-self: center;
+}
+
+#cadre {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+#maininformations {
+  grid-area: maininformations;
+  padding: 5px 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+#extrainformations {
+  grid-area: extrainformations;
+  padding: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  background-color: lightskyblue;
+}
+
+span.customTitle {
+  font-weight: bold;
+  font-size: larger;
+}
+
+span.name {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+span.job {
+  font-style: italic;
+  font-size: larger;
+}
+
+div.part {
+  transition: all 0.5s ease-in 0.15s;
+}
+
+div.part:hover {
+  background-color: #a1e1fe;
+}
